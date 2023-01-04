@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>scroll bottom nav test</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover'">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	*{margin:0; padding:0;}
+	li {list-style:none;}
+	#wrap div {border:1px solid red}
+	.pop_wrap {position: fixed; bottom:0; left:0; width:100%; border:1px solid blue; background-color:#fff; padding:0 0 calc(env(safe-area-inset-bottom) + 15px);}
+	.pop_wrap ul {display:flex; justify-content: space-between;}
+	.pop_wrap ul a {border:1px solid pink}
+</style>
+</head>
+
+  <body>
+
+
+	<div id="wrap">
+		<div style="height:1500px">
+			내용
+
+			<input type="text" inputmode="numeric">
+		</div>
+	</div>
+	
+	
+
+  </body>
+
+
+  <div class="pop_wrap" tabindex="0">
+	<ul>
+		<li>
+			<a href="#;">버튼 1</a>
+		</li>
+		<li>
+			<a href="#;">버튼 2</a>
+		</li>
+		<li>
+			<a href="#;">버튼 3</a>
+		</li>
+		<li>
+			<a href="#;">버튼 4</a>
+		</li>
+	</ul>
+  </div>
+
+
+  <script>
+
+	$(function(){
+		
+	})
+
+  </script>
+
+
+</html>
+
